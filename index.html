@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Website Design</title>
+    <style>
+        /* Global styles */
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            background-image: url('https://www.ruffalonl.com/wp-content/uploads/2022/03/CWarren_DigitalWallet_1200.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            color: #f8f9fa; /* White text color for better contrast */
+            position: relative;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text readability */
+            z-index: -1;
+        }
+
+        .navbar-custom {
+            background-color: #343a40;
+        }
+
+        .navbar-custom .navbar-brand,
+        .navbar-custom .nav-link {
+            color: #f8f9fa;
+        }
+
+        .navbar-custom .nav-link:hover {
+            color: #ffc107;
+        }
+
+        .card {
+            margin-bottom: 20px;
+            background-color: rgba(0, 0, 0, 0.6); /* Darker card background */
+            border-radius: 15px; /* Rounded corners for cards */
+            padding: 15px; /* Padding inside cards */
+            color: #f8f9fa; /* White text color inside cards */
+            border: 1px solid #444; /* Dark border for cards */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for cards */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+        }
+
+        .card:hover {
+            transform: scale(1.02); /* Slight zoom effect on hover */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
+        }
+
+        .card-title {
+            font-size: 1.75rem; /* Slightly smaller title size */
+            color: #ffc107; /* Yellow title color */
+            text-align: center; /* Center-align titles */
+            margin-bottom: 10px; /* Bottom margin for titles */
+        }
+
+        .card-text {
+            font-size: 1rem; /* Adjusted text size */
+            color: #e0e0e0; /* Lighter text color for readability */
+        }
+
+        .container {
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .row {
+            margin-top: 20px;
+        }
+
+        .card-img-top {
+            border-radius: 15px 15px 0 0;
+            object-fit: cover;
+            height: 200px; /* Adjusted height for consistency */
+        }
+
+        .btn-primary {
+            background-color: #007bff; /* Consistent button color */
+            border: none; /* Remove border */
+            transition: background-color 0.3s ease; /* Smooth color transition */
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3; /* Darker button color on hover */
+        }
+
+        /* Table styles */
+        table {
+            background-color: #333; /* Dark background color */
+            color: #f8f9fa; /* White text color */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Darker shadow */
+        }
+
+        /* Flexbox image container */
+        .image-container {
+            display: flex;
+            justify-content: center; /* Align images to the start */
+            gap: 15px; /* Space between images */
+            flex-wrap: wrap; /* Allow images to wrap on smaller screens */
+            margin-top: 20px; /* Space above the images */
+        }
+
+        .image-container img {
+            max-width: 45%; /* Adjust to make images slightly smaller */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 10px; /* Rounded corners for images */
+            transition: transform 0.3s ease; /* Smooth image zoom effect */
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05); /* Slight zoom effect on hover */
+        }
+
+        .section-title {
+            color: #343a40;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Specific styles for home page */
+        .home-page-title {
+            color: #ffffff; /* White color for home page title */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div> <!-- Dark overlay for better text visibility -->
+
+    <nav class="navbar navbar-expand-sm navbar-custom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Website Design</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="digi.html">Digital Wallet</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="features.html">Features</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="home-page-title">Welcome Page</h1>
+        <p>Welcome to my website design about my online business proposal </p>
+        <p>This is mainly targeted towards the elderly who are more vulnerable to identity theft attacks.</p>
+    </div>
+
+    <div class="container-fluid" style="background: #e0f7fa;">
+        <div class="row">
+            <div class="col-12 col-md-4" id="A">
+                <h1 class="section-title">About</h1>
+                <div class="card">
+                    <img class="card-img-top" src="https://itchronicles.com/wp-content/uploads/2023/07/face-recognition.jpg" alt="About">
+                    <div class="card-body">
+                        <h4 class="card-title">About</h4>
+                        <p class="card-text">Describes my business idea and how it can be used to solve challenges in the financial service sector.</p>
+                        <a href="about.html" class="btn btn-primary">View About</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4" id="B">
+                <h1 class="section-title">Features</h1>
+                <div class="card">
+                    <img class="card-img-top" src="https://www.tridon.com/wp-content/uploads/sites/72/2021/06/security_abstract_istock-100803344-large.jpg" alt="Features">
+                    <div class="card-body">
+                        <h4 class="card-title">Service Features</h4>
+                        <p class="card-text">Displays and explains the different service features being used in my business idea that can help solve challenges in the financial service sector.</p>
+                        <a href="features.html" class="btn btn-primary">View Features</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4" id="C">
+                <h1 class="section-title">Digital Wallet</h1>
+                <div class="card">
+                    <img class="card-img-top" src="https://www.shutterstock.com/image-vector/digital-wallet-application-on-mobilemobile-260nw-2146830067.jpg" alt="Digital Wallet">
+                    <div class="card-body">
+                        <h4 class="card-title">Digital Wallet</h4>
+                        <p class="card-text">Displays the process of transactions in the digital wallet.</p>
+                        <a href="digi.html" class="btn btn-primary">View Digital Wallet</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
